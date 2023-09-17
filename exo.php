@@ -19,7 +19,7 @@
 
         //EXO3
         
-        class Personne{
+       /*  class Personne{
             public $nom;
             public $age;
 
@@ -27,6 +27,29 @@
                 $this->nom = $nom;
                 $this->age = $age;
             }
-        }
+
+            public function afficherDetail(){
+                echo "nom". $this->nom;
+                echo "age". $this->age;
+            }
+        } */
         
+
+        class Personne{
+            private $nom;
+            private $age;
+
+            public function __construct($nom, $age ){
+                $this->nom = $nom;
+                $this->age = $age;
+            }
+
+        public function setNom() {
+             $this->non = $nom;
+        }
+
+        public function getAge() {
+            return $this->age;
+        }
+            }
    
