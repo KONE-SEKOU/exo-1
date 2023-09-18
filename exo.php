@@ -1,55 +1,25 @@
-<?php 
-/* 
-    class Personne{
+exo1
+<?php
 
-            public $homme;
-            public $femme;
-
-            public function genre(){
-                echo " quelle est votre genre";
-            }
-        } */
-        //exo 2
-          /*   $afficherDetail = new Genre();
-
-            $afficherDetail->genre = "homme";
-            $afficherDetail->genre = "femme";
-            $afficherDetail->genre(); */
-
-
-        //EXO3
-        
-       /*  class Personne{
+        class Personne
+        {
             public $nom;
             public $age;
 
-            public function __construct($nom, $age ){
-                $this->nom = $nom;
+            public function __construct($name, $age)
+            {
+                $this->nom = $name;
                 $this->age = $age;
             }
 
-            public function afficherDetail(){
-                echo "nom". $this->nom;
-                echo "age". $this->age;
+            public function getInfo()
+            {
+                return "je suis ".$this->nom." et j'ai ".$this->age." ans";
             }
-        } */
-        
-
-        class Personne{
-            private $nom;
-            private $age;
-
-            public function __construct($nom, $age ){
-                $this->nom = $nom;
-                $this->age = $age;
-            }
-
-        public function setNom() {
-             $this->non = $nom;
         }
 
-        public function getAge() {
-            return $this->age;
-        }
-            }
-   
+            $myPersonne = new Personne("kone", 19);
+            
+            echo $myPersonne->getInfo();
+
+
